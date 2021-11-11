@@ -10,20 +10,21 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.SE_Demo">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Intro_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Subactivity_top" />
         <activity android:name=".Subactivity_bottom" />
         <activity android:name=".Color" />
         <activity android:name=".Material" />
-        <activity android:name=".LastDate" />
         <activity android:name=".Top_Bottom" />
         <activity android:name=".WindSystem"/>
         <activity android:name=".Cloth_search"/>
+        <activity android:name=".Photo"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

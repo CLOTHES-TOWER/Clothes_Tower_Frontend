@@ -1,21 +1,40 @@
 package com.example.se_demo;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.ServerError;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Date;
+
+import static android.content.ContentValues.TAG;
 
 public class Material extends AppCompatActivity {
 
     JSONObject jsonData;
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.material);
@@ -31,11 +50,11 @@ public class Material extends AppCompatActivity {
         Button suede = (Button) findViewById(R.id.material9);
         Button linen = (Button) findViewById(R.id.material10);
         Button etc = (Button) findViewById(R.id.material11);
+
         Intent intent = getIntent();
 
         try{
             jsonData = new JSONObject(intent.getStringExtra("jsonData"));
-            System.out.println(jsonData.toString());
         }catch(JSONException e){
             e.printStackTrace();
         }
@@ -43,7 +62,7 @@ public class Material extends AppCompatActivity {
         cotton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "cotton");
                 }catch(JSONException e){
@@ -57,7 +76,7 @@ public class Material extends AppCompatActivity {
         poly.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "poly");
                 }catch(JSONException e){
@@ -71,7 +90,7 @@ public class Material extends AppCompatActivity {
         rayon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "rayon");
                 }catch(JSONException e){
@@ -85,7 +104,7 @@ public class Material extends AppCompatActivity {
         kimo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "kimo");
                 }catch(JSONException e){
@@ -99,7 +118,7 @@ public class Material extends AppCompatActivity {
         acrylic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "acrylic");
                 }catch(JSONException e){
@@ -113,7 +132,7 @@ public class Material extends AppCompatActivity {
         wool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "wool");
                 }catch(JSONException e){
@@ -127,7 +146,7 @@ public class Material extends AppCompatActivity {
         cashmere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "cashmere");
                 }catch(JSONException e){
@@ -141,7 +160,7 @@ public class Material extends AppCompatActivity {
         nylon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "nylon");
                 }catch(JSONException e){
@@ -155,7 +174,7 @@ public class Material extends AppCompatActivity {
         suede.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "suede");
                 }catch(JSONException e){
@@ -169,7 +188,7 @@ public class Material extends AppCompatActivity {
         linen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "linen");
                 }catch(JSONException e){
@@ -183,7 +202,7 @@ public class Material extends AppCompatActivity {
         etc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LastDate.class);
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
                 try {
                     jsonData.put("material", "etc");
                 }catch(JSONException e){

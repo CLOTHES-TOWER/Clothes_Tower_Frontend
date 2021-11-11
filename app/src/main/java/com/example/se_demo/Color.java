@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 public class Color extends AppCompatActivity {
     JSONObject jsonData;
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.color);

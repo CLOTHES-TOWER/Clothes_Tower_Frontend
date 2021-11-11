@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="검색하기"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:textSize="30dp"
         android:textColor="#000000"/>
@@ -20,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center_horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -52,8 +53,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center_horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -87,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,7 +97,7 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_red"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -104,7 +105,7 @@
                 android:layout_alignParentTop="true"
                 android:background="@drawable/ellipse_red" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_orange"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -113,7 +114,7 @@
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/ellipse_orange" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_yellow"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -130,7 +131,7 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_green"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -138,7 +139,7 @@
                 android:layout_alignParentTop="true"
                 android:background="@drawable/ellipse_green" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_blue"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -147,7 +148,7 @@
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/ellipse_blue" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_indigo"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -156,7 +157,7 @@
                 android:layout_marginLeft="40dp"
                 android:background="@drawable/ellipse_indigo" />
 
-            <View
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ellipse_purple"
                 android:layout_width="52dp"
                 android:layout_height="42dp"
@@ -180,7 +181,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -309,6 +311,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
             android:layout_gravity="center">
 
             <androidx.appcompat.widget.AppCompatButton
@@ -337,16 +340,5 @@
 
 
     </LinearLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconTint="#000000"
-        app:itemTextColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/under_menu"
-        tools:layout_editor_absoluteX="16dp" />
-
 
 </LinearLayout>

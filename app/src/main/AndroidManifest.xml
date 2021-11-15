@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.se_demo">
 
     <application
@@ -9,6 +10,7 @@
         android:roundIcon="@drawable/closet"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        tools:targetApi="m"
         android:theme="@style/Theme.SE_Demo">
         <activity android:name=".Intro_activity">
             <intent-filter>
@@ -16,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".InitialScreen"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Subactivity_top" />
         <activity android:name=".Subactivity_bottom" />
         <activity android:name=".Color" />
@@ -25,6 +28,8 @@
         <activity android:name=".WindSystem"/>
         <activity android:name=".Cloth_search"/>
         <activity android:name=".Photo"/>
+        <activity android:name=".Styler"/>
+        <activity android:name=".FragmentHanger" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

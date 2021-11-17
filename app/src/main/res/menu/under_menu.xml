@@ -5,13 +5,13 @@
         android:id="@+id/hanger"
         android:enabled="true"
         android:icon="@drawable/hanger"
-        android:title="add"/>
+        android:title="hanger"/>
 
     <item
         android:id="@+id/drawer"
         android:enabled="true"
         android:icon="@drawable/drawer"
-        android:title="list"/>
+        android:title="drawer"/>
 
     <item
         android:id="@+id/calendar"

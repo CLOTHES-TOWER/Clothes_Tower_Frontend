@@ -8,31 +8,31 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WindSystem extends AppCompatActivity {
+public class Styler extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.windsystem);
+        setContentView(R.layout.styler);
 
-        Button windyes = (Button)findViewById(R.id.windYes);
-        Button windno = (Button)findViewById(R.id.windNo);
+        Button styleryes = (Button)findViewById(R.id.stylerYes);
+        Button stylerno = (Button)findViewById(R.id.stylerNo);
 
-        windyes.setOnClickListener(new View.OnClickListener() {
+        styleryes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), InitialScreen.class);
-                Toast toast = Toast.makeText(getApplicationContext(), "환기시스템이 예약되었습니다", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), "스타일러가 예약되었습니다", Toast.LENGTH_LONG);
                 toast.show();
                 startActivity(intent);
 
             }
         });
 
-        windno.setOnClickListener(new View.OnClickListener() {
+        stylerno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), InitialScreen.class);
-                Toast toast = Toast.makeText(getApplicationContext(), "환기시스템을 예약하지 않으셨습니다", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), "스타일러가 예약하지 않으셨습니다", Toast.LENGTH_LONG);
                 toast.show();
                 startActivity(intent);
             }

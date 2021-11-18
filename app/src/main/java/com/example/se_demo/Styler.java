@@ -21,6 +21,8 @@ public class Styler extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), InitialScreen.class);
+                //MainActivity.class로 넘어가면 하단바 구성이 사라지므로 InitialScreen.class로 넘어가야한다.
+                //다른 버튼들도 마찬가지
                 Toast toast = Toast.makeText(getApplicationContext(), "스타일러가 예약되었습니다", Toast.LENGTH_LONG);
                 toast.show();
                 startActivity(intent);

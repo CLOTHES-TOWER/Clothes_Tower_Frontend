@@ -35,10 +35,10 @@ import static android.content.ContentValues.TAG;
 
 public class Photo extends AppCompatActivity {
 
-    String postUrl = "http://3.37.62.214/cloth";
+    String postUrl = "http://13.209.87.94/cloth";
     JSONObject jsonData;
     TextView txt;
-
+    TextView jsontxt;
 
 
     private final int GET_GALLERY_IMAGE = 200;//사진
@@ -96,6 +96,7 @@ public class Photo extends AppCompatActivity {
                         new Response.Listener<JSONObject>(){
                             @Override
                             public void onResponse(JSONObject response) {
+                                txt=(TextView) findViewById(R.id.txt);
                                 txt.setText(response.toString());
                             }
                         },
@@ -117,7 +118,8 @@ public class Photo extends AppCompatActivity {
                         });
                 Intent intent = new Intent(getApplicationContext(), InitialScreen.class);
                 startActivity(intent);
-
+                jsontxt = findViewById(R.id.jsontxt);
+                jsontxt.setText(jsonData.toString());
                 jsonObjectRequest.setShouldCache(false);
                 sendHelper.requestQueue = Volley.newRequestQueue(getApplicationContext());
                 sendHelper.requestQueue.add(jsonObjectRequest);

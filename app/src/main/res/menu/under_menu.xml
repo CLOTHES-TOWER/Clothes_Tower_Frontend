@@ -20,8 +20,8 @@
         android:title="calendar"/>
 
     <item
-        android:id="@+id/settings"
+        android:id="@+id/windsystem"
         android:enabled="true"
-        android:icon="@drawable/settings"
-        android:title="settings"/>
+        android:icon="@drawable/wind"
+        android:title="ventilation"/>
 </menu>

@@ -12,7 +12,7 @@ public class WindSystem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.windsystem);
+        setContentView(R.layout.fragment_wind);
 
         Button windyes = (Button)findViewById(R.id.windYes);
         Button windno = (Button)findViewById(R.id.windNo);

@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".InitialScreen"/>
-        <activity android:name=".MainActivity"/>
         <activity android:name=".Subactivity_top" />
         <activity android:name=".Subactivity_bottom" />
         <activity android:name=".Color" />
@@ -29,7 +28,8 @@
         <activity android:name=".Cloth_search"/>
         <activity android:name=".Photo"/>
         <activity android:name=".Styler"/>
-        <activity android:name=".FragmentHanger" />
+        <activity android:name=".FragmentHanger"/>
+        <activity android:name=".Trash"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

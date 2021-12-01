@@ -39,44 +39,26 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth1"/>
 
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="1번 옷"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth3"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth2"/>
 
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler1"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash1"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth4"
+                    android:id="@+id/cloth3"/>
 
             </LinearLayout>
 
@@ -86,44 +68,26 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth4"/>
 
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="2번 옷"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth4"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth5"/>
 
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler2"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash2"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth1"
+                    android:id="@+id/cloth6"/>
 
             </LinearLayout>
 
@@ -133,279 +97,26 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth7"/>
 
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="3번 옷"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth2"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/cloth8"/>
 
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler3"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash3"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="4번 옷"/>
-
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler4"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash4"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="5번 옷"/>
-
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler5"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash5"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="6번 옷"/>
-
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler6"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash6"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="7번 옷"/>
-
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler7"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash7"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="300dp"
-                    android:layout_height="70dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="30dp"
-                        android:text="8번 옷"/>
-
-                    <LinearLayout
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/styler8"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/styler" />
-
-                        <Button
-                            android:id="@+id/trash8"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="15dp"
-                            android:background="@drawable/trash" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:background="@drawable/cloth1"/>
+                <ImageButton
+                    android:layout_width="120dp"
+                    android:layout_height="168dp"
+                    android:background="@drawable/cloth3"
+                    android:id="@+id/cloth9"/>
 
             </LinearLayout>
 

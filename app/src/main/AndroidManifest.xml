@@ -29,6 +29,7 @@
         <activity android:name=".Photo"/>
         <activity android:name=".Styler"/>
         <activity android:name=".FragmentHanger"/>
+        <activity android:name=".FragmentDrawer"/>
         <activity android:name=".Trash"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

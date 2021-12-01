@@ -70,10 +70,5 @@ public class Top_Bottom extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 }

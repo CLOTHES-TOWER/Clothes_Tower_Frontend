@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,14 +19,14 @@ public class Color extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.color);
 
-        Button color_red = (Button) findViewById(R.id.checkBoxcolor1);
-        Button color_orange = (Button) findViewById(R.id.checkBoxcolor2);
-        Button color_yellow = (Button) findViewById(R.id.checkBoxcolor3);
-        Button color_green = (Button) findViewById(R.id.checkBoxcolor4);
-        Button color_blue = (Button) findViewById(R.id.checkBoxcolor5);
-        Button color_gray = (Button) findViewById(R.id.checkBoxcolor6);
-        Button color_black = (Button) findViewById(R.id.checkBoxcolor7);
-        Button color_white = (Button) findViewById(R.id.checkBoxcolor8);
+        CheckBox color_red = (CheckBox) findViewById(R.id.checkBoxcolor1);
+        CheckBox color_orange = (CheckBox) findViewById(R.id.checkBoxcolor2);
+        CheckBox color_yellow = (CheckBox) findViewById(R.id.checkBoxcolor3);
+        CheckBox color_green = (CheckBox) findViewById(R.id.checkBoxcolor4);
+        CheckBox color_blue = (CheckBox) findViewById(R.id.checkBoxcolor5);
+        CheckBox color_gray = (CheckBox) findViewById(R.id.checkBoxcolor6);
+        CheckBox color_black = (CheckBox) findViewById(R.id.checkBoxcolor7);
+        CheckBox color_white = (CheckBox) findViewById(R.id.checkBoxcolor8);
         Intent intent = getIntent();
 
         try {

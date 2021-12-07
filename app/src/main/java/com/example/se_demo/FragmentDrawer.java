@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +20,8 @@ public class FragmentDrawer extends Fragment {
 
         Button drawer1_temp = (Button)view.findViewById(R.id.drawer1_temp);
         Button drawer1_hum = (Button)view.findViewById(R.id.drawer1_hum);
+
+
         drawer1_temp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

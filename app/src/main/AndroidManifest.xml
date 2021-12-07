@@ -24,13 +24,13 @@
         <activity android:name=".Color" />
         <activity android:name=".Material" />
         <activity android:name=".Top_Bottom" />
-        <activity android:name=".WindSystem"/>
         <activity android:name=".Cloth_search"/>
         <activity android:name=".Photo"/>
         <activity android:name=".Styler"/>
         <activity android:name=".FragmentHanger"/>
         <activity android:name=".FragmentDrawer"/>
         <activity android:name=".Trash"/>
+        <activity android:name=".Etc"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

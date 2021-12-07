@@ -3,18 +3,13 @@ package com.example.se_demo;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.telecom.Call;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,9 +25,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
-import java.io.File;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import static android.content.ContentValues.TAG;
 
@@ -42,15 +34,24 @@ public class Photo extends AppCompatActivity {
     JSONObject jsonData;
     TextView txt;
     TextView jsontxt;
-    TextView hanger_txt;
     Spinner hanger_spinner;
     String[] items = {"행거1번", "행거2번", "행거3번", "행거4번", "행거5번", "행거6번", "행거7번", "행거8번", "행거9번", "행거10번"};
-
+    ImageButton cancel_btn6;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo);
 
-//        hanger_txt = (TextView) findViewById(R.id.hanger_txt);
+        cancel_btn6 = (ImageButton) findViewById(R.id.cancel_btn6);
+
+        cancel_btn6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), InitialScreen.class);
+
+                startActivity(intent);
+            }
+        });
+
         hanger_spinner = (Spinner) findViewById(R.id.hanger_spinner);
 
         Intent intent = getIntent();
@@ -117,8 +118,8 @@ public class Photo extends AppCompatActivity {
                         new Response.Listener<JSONObject>(){
                             @Override
                             public void onResponse(JSONObject response) {
-//                                txt=(TextView) findViewById(R.id.txt);
-//                                txt.setText(response.toString());
+//                                jsontxt = (TextView)findViewById(R.id.jsontxt);
+//                                jsontxt.setText(response.toString());
                             }
                         },
                         new Response.ErrorListener() {
@@ -152,9 +153,4 @@ public class Photo extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
-
-
-
-
 }

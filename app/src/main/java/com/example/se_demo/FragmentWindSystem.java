@@ -7,11 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
+import com.bumptech.glide.Glide;
 
 public class FragmentWindSystem extends Fragment {
 
@@ -23,6 +27,9 @@ public class FragmentWindSystem extends Fragment {
 
         Button windyes = (Button)view.findViewById(R.id.windYes);
         Button windno = (Button)view.findViewById(R.id.windNo);
+        ImageView gif_id = (ImageView)view.findViewById(R.id.gif_id);
+
+        Glide.with(this).load(R.raw.ventilation).into(gif_id);
 
         windyes.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -46,19 +46,22 @@ public class FragmentHanger extends Fragment implements View.OnClickListener{
         Button addbtn = (Button)view.findViewById(R.id.AddBtn);
         Button savebtn = (Button)view.findViewById(R.id.SaveBtn);
         ImageButton cloth = (ImageButton)view.findViewById(R.id.cloth1);
-//        ImageButton[] btnno = new ImageButton[9];
-//        for (int i = 0; i < btnno.length; i++) {
-//            String buttonId = "button_no_" + (i + 1);
-//            btnno[i] = view.findViewById(getResources().getIdentifier(buttonId, "id", (getActivity()).getPackageName()));
-//        }
-//
-//        for (ImageButton buttonId : btnno) {
-//            buttonId.setOnClickListener(new View.OnClickListener() {
-//                @Override public void onClick(View view) {
-//                    showpopmsg();
-//                }
-//            });
-//        }
+        Button Ventilbtn = (Button)view.findViewById(R.id.VentilBtn);
+        Button Stylerbtn = (Button)view.findViewById(R.id.StylerBtn);
+
+        Stylerbtn.setOnClickListener(new View.OnClickListener(){
+            @Override public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Styler.class);
+                startActivity(intent);
+            }
+        });
+
+        Ventilbtn.setOnClickListener(new View.OnClickListener(){
+            @Override public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FragmentWindSystem.class);
+                startActivity(intent);
+            }
+        });
 
         cloth.setOnClickListener(new View.OnClickListener(){
               @Override public void onClick(View view) {

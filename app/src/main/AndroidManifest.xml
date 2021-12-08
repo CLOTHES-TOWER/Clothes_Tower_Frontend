@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".InitialScreen"/>
+        <activity android:name=".InitialScreen"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".Subactivity_top" />
         <activity android:name=".Subactivity_bottom" />
         <activity android:name=".Color" />
@@ -29,6 +30,8 @@
         <activity android:name=".Styler"/>
         <activity android:name=".FragmentHanger"/>
         <activity android:name=".FragmentDrawer"/>
+        <activity android:name=".FragmentWindSystem"/>
+        <activity android:name=".StylerReservation"/>
         <activity android:name=".Trash"/>
         <activity android:name=".Etc"/>
     </application>

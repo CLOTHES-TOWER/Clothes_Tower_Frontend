@@ -19,9 +19,5 @@
         android:icon="@drawable/calendar"
         android:title="calendar"/>
 
-    <item
-        android:id="@+id/windsystem"
-        android:enabled="true"
-        android:icon="@drawable/wind"
-        android:title="ventilation"/>
+
 </menu>

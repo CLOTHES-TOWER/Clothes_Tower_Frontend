@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -68,6 +70,8 @@ public class FragmentCalendar extends Fragment {
                 textView2.setText(str);
                 content_txt.setVisibility(View.INVISIBLE);
                 textView2.setVisibility(View.VISIBLE);
+                Toast toast = Toast.makeText(getActivity().getApplicationContext(), "일정이 추가되었습니다", Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
 

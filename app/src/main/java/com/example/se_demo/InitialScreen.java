@@ -18,7 +18,7 @@ public class InitialScreen extends AppCompatActivity {
     private FragmentHanger fragmentHanger = new FragmentHanger();
     private FragmentDrawer fragmentDrawer = new FragmentDrawer();
     private FragmentCalendar fragmentCalendar = new FragmentCalendar();
-    private FragmentWindSystem fragmentWindSystem = new FragmentWindSystem();
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,9 +46,6 @@ public class InitialScreen extends AppCompatActivity {
                     break;
                 case R.id.calendar:
                     transaction.replace(R.id.frameLayout, fragmentCalendar).commitAllowingStateLoss();
-                    break;
-                case R.id.windsystem:
-                    transaction.replace(R.id.frameLayout, fragmentWindSystem).commitAllowingStateLoss();
                     break;
             }
             return true;

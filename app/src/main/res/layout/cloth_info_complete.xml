@@ -16,7 +16,6 @@
         android:id="@+id/top_menu"
         app:layout_constraintTop_toTopOf="@+id/parent"
         app:layout_constraintBottom_toTopOf="@+id/Scroll"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="30dp">
 
         <TextView
@@ -29,13 +28,30 @@
             android:textAlignment="center"/>
 
         <Button
-            android:id="@+id/SaveBtn"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/StylerBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/search"
-            android:layout_marginRight="10dp"
+            android:background="@drawable/styler"
             app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/VentilBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wind"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search"
+            app:backgroundTint="@color/black" />
+
+
 
     </LinearLayout>
 
